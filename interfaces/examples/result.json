@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "task_id": "DATA-001",
+  "agent": "data_agent",
+  "status": "completed",
+  "summary": "Count determined from local catalog (example only).",
+  "files_changed": [],
+  "tests_run": [
+    "Catalog query executed"
+  ],
+  "evidence": [
+    "Query: direction=anticlockwise AND validity=validated"
+  ],
+  "unresolved_issues": []
+}

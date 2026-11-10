@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "task_id": "DATA-001",
+  "agent": "data_agent",
+  "objective": "Count validated anticlockwise cube rotation source recordings",
+  "inputs": {
+    "catalog_path": ".local/catalog.sqlite"
+  },
+  "constraints": [
+    "Use source recordings, not exported segments"
+  ],
+  "acceptance_criteria": [
+    "Count comes from the catalog",
+    "Include query filters in result"
+  ]
+}

@@ -1,0 +1,4 @@
+recording_id,recorded_at_utc,task,direction,outcome,validity,source_path
+mock-001,2026-11-01T10:00:00+00:00,cube rotation,clockwise,success,validated,/synthetic/mock-001.mcap
+mock-002,2026-11-02T10:00:00+00:00,cube rotation,anticlockwise,success,validated,/synthetic/mock-002.mcap
+mock-003,2026-11-03T10:00:00+00:00,cube rotation,anticlockwise,failure,review,/synthetic/mock-003.mcap

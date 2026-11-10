@@ -1,0 +1,3 @@
+{"id":"all", "question":"How many recordings?", "filters":{}, "expected_count":3}
+{"id":"anti", "question":"Have we collected anticlockwise rotations?", "filters":{"direction":"anticlockwise"}, "expected_count":2}
+{"id":"anti_valid", "question":"How many validated anticlockwise recordings?", "filters":{"direction":"anticlockwise","validity":"validated"}, "expected_count":1}

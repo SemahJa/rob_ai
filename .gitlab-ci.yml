@@ -1,0 +1,26 @@
+image: python:3.11-slim
+
+stages:
+  - test
+
+data_agent_tests:
+  stage: test
+  rules:
+    - changes:
+        - agents/data_agent/**/*
+        - interfaces/**/*
+        - .gitlab-ci.yml
+  script:
+    - cd agents/data_agent
+    - python -m unittest discover -s tests -v
+
+# Enable the BC job after copying the existing BC starter into agents/bc_agent.
+# bc_agent_tests:
+#   stage: test
+#   rules:
+#     - changes:
+#         - agents/bc_agent/**/*
+#         - interfaces/**/*
+#   script:
+#     - cd agents/bc_agent
+#     - python -m unittest discover -s tests -v
